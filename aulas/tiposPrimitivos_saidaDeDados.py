@@ -30,14 +30,16 @@ print(f'a soma de {num1} + {num2} é {num1 + num2}')
 
 #Faça um programa que leia algo pelo teclado e motre na tela
 #o seu tipo primitivo e todas as informações possíveis sobre ele. 
-algo = input("\nDigite algo:\n")
+algo = input("\nDigite algo: ")
+
 print(f'-- Informações sobre "{algo}" --\n' 
-      f'.isalnum()? {algo.isalnum()}\n'
-      f'.isalpha()? {algo.isalpha()}\n'
-      f'.isascii()? {algo.isascii()}\n'
-      f'.isdecimal()? {algo.isdecimal()}\n'
-      f'.isdigit()? {algo.isdigit()}\n'
-      f'.isidentifier()? {algo.isidentifier()}\n'
-      f'.islower()? {algo.islower()}\n')
+      f'Tipo primitivo: {type(algo)}\n'
+      f'É alfanumérico? {algo.isalnum()}\n'
+      f'É alfabético? {algo.isalpha()}\n'
+      f'É um ASCII? {algo.isascii()}\n'
+      f'É decimal? {algo.isdecimal()}\n'
+      f'É string apenas com números? {algo.isdigit()}\n'
+      f'É identificador? {algo.isidentifier()}\n'
+      f'Está tudo em minusculo? {algo.islower()}\n')
 
 # :)
