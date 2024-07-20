@@ -26,6 +26,14 @@ print(frase[15:])
 #vai começar no 9, vai até o final (não tem número no meio), e vai pulando de 3 em 3
 print(frase[9::3])
 
+# Inverta uma string de trás pra frente
+print(frase[::-1])
+
+# Imprime os caracteres nos índices ímpares
+print(frase[1::2])
+
+# Busque o último item da lista
+print(frase[-1])
 
 """ Análise """
 
@@ -49,7 +57,7 @@ print('Curso' in frase)
 """ Transformação """
 
 #técnico pediu substituição
-print(frase.replace('Python', 'Android'))
+frase = frase.replace('Python', 'Android') #pra salvar a alteração tem que fazer assim 
 
 #GRITA NÃOOOOOOO
 print(frase.upper())
@@ -63,7 +71,7 @@ frase.capitalize()
 #Ele Deixa Cada Primeira Palavra Em Maiusculo 
 frase.title()
 
-#pra remover os espaços do começo e do fim 
+#pra remover os espaços do começo e do fim  
 #exemplo _ _ _ O I _ A M I G O _ _ 
 #vai remover esses que não serve pra nada
 frase.strip()
